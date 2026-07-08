@@ -120,12 +120,26 @@ h3{ font-size:1.35rem; }
 .hero-actions{ display:flex; gap:1rem; margin-bottom:1.6rem; flex-wrap:wrap; }
 .hero-note{ font-family:var(--font-display); font-style:italic; font-size:1.05rem; color:var(--olive); }
 
-.hero-visual{ display:flex; justify-content:center; width:100%; }
+.hero-visual{ display:flex; justify-content:center; width:100%; position:relative; }
 .hero-photo{
   width:100%; height:440px; object-fit:cover; object-position:center;
   border-radius:160px 160px 12px 12px;
   border:3px solid var(--gold);
   box-shadow:0 30px 60px -20px rgba(51,66,42,0.35);
+}
+.ayah-caption{
+  position:absolute; left:12%; right:12%; top:14%;
+  text-align:center; pointer-events:none;
+}
+.ayah-arabic{
+  font-family:'Amiri', serif; font-size:1.9rem; color:var(--olive-deep);
+  text-shadow:0 1px 3px rgba(250,248,243,0.9), 0 0 12px rgba(250,248,243,0.7);
+  margin-bottom:0.5rem; line-height:1.6;
+}
+.ayah-en{
+  font-family:var(--font-display); font-style:italic; font-size:0.85rem; color:var(--dark);
+  text-shadow:0 1px 3px rgba(250,248,243,0.9), 0 0 10px rgba(250,248,243,0.7);
+  max-width:260px; margin:0 auto; line-height:1.4;
 }
 
 /* Geometric star pattern divider — signature element */
@@ -279,12 +293,22 @@ h3{ font-size:1.35rem; }
    ============================================================ */
 @media (max-width:900px){
   .main-nav{
-    position:fixed; inset:64px 0 0 0; background:var(--cream-soft);
-    flex-direction:column; align-items:flex-start; padding:2rem 1.5rem; gap:1.4rem;
-    transform:translateX(100%); transition:transform .3s ease; z-index:99;
+    position:fixed; top:0; right:0; bottom:0;
+    width:78%; max-width:320px;
+    background:var(--cream-soft);
+    flex-direction:column; align-items:flex-start;
+    padding:6rem 2rem 2rem; gap:1.6rem;
+    transform:translateX(100%); transition:transform .3s ease;
+    z-index:200; box-shadow:-8px 0 30px rgba(0,0,0,0.15);
+    overflow-y:auto;
   }
   .main-nav.is-open{ transform:translateX(0); }
-  .nav-toggle{ display:flex; }
+  .nav-backdrop{
+    position:fixed; inset:0; background:rgba(45,45,45,0.4);
+    z-index:150; opacity:0; pointer-events:none; transition:opacity .3s ease;
+  }
+  .nav-backdrop.is-open{ opacity:1; pointer-events:auto; }
+  .nav-toggle{ display:flex; position:relative; z-index:210; }
 
   .hero-inner{ grid-template-columns:1fr; text-align:center; padding-top:3rem; }
   .hero-copy{ order:2; }
