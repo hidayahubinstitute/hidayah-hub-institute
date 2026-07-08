@@ -3,18 +3,31 @@
 // ============================================================
 const navToggle = document.getElementById('navToggle');
 const mainNav = document.getElementById('mainNav');
+const navBackdrop = document.getElementById('navBackdrop');
+
+function closeNav(){
+  mainNav.classList.remove('is-open');
+  navBackdrop.classList.remove('is-open');
+  navToggle.setAttribute('aria-expanded', 'false');
+  document.body.style.overflow = '';
+}
+function openNav(){
+  mainNav.classList.add('is-open');
+  navBackdrop.classList.add('is-open');
+  navToggle.setAttribute('aria-expanded', 'true');
+  document.body.style.overflow = 'hidden';
+}
 
 navToggle.addEventListener('click', () => {
-  const isOpen = mainNav.classList.toggle('is-open');
-  navToggle.setAttribute('aria-expanded', isOpen);
+  const isOpen = mainNav.classList.contains('is-open');
+  isOpen ? closeNav() : openNav();
 });
+
+navBackdrop.addEventListener('click', closeNav);
 
 // Close mobile nav when a link is clicked
 mainNav.querySelectorAll('a').forEach(link => {
-  link.addEventListener('click', () => {
-    mainNav.classList.remove('is-open');
-    navToggle.setAttribute('aria-expanded', 'false');
-  });
+  link.addEventListener('click', closeNav);
 });
 
 // ============================================================
