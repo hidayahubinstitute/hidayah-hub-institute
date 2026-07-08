@@ -2,16 +2,16 @@
    Hidayah Hub Institute — Design Tokens
    ============================================================ */
 :root{
-  --olive-deep:   #33422A;
-  --olive:        #4E5F3C;
-  --olive-soft:   #6C7C58;
-  --gold:         #C6A15B;
-  --gold-bright:  #E0BD7D;
-  --cream:        #F7F2E6;
-  --cream-soft:   #FBF8F0;
-  --dark:         #2A2A25;
-  --ink:          #4A4A41;
-  --line:         rgba(42,42,37,0.12);
+  --olive-deep:   #556B2F;
+  --olive:        #6C8043;
+  --olive-soft:   #869A5C;
+  --gold:         #C8A951;
+  --gold-bright:  #DBC078;
+  --cream:        #FAF8F3;
+  --cream-soft:   #FDFCF9;
+  --dark:         #2D2D2D;
+  --ink:          #4A4A46;
+  --line:         rgba(45,45,45,0.12);
 
   --font-display: 'Cormorant Garamond', serif;
   --font-body:    'Poppins', sans-serif;
@@ -85,7 +85,8 @@ h2{ font-size:clamp(1.9rem, 3.2vw, 2.6rem); margin-bottom:1rem; }
   padding:1rem 1.5rem;
 }
 .brand{ display:flex; align-items:center; gap:0.6rem; color:var(--olive-deep); }
-.brand-mark{ color:var(--gold); display:flex; }
+.brand-mark{ display:flex; align-items:center; }
+.brand-mark-img{ height:44px; width:auto; display:block; }
 .brand-text{ font-family:var(--font-display); font-size:1.35rem; letter-spacing:0.01em; }
 .brand-text em{ font-style:italic; color:var(--gold); font-weight:500; }
 
@@ -119,9 +120,11 @@ h2{ font-size:clamp(1.9rem, 3.2vw, 2.6rem); margin-bottom:1rem; }
 .hero-note{ font-family:var(--font-display); font-style:italic; font-size:1.05rem; color:var(--olive); }
 
 .hero-visual{ display:flex; justify-content:center; }
-.hero-illustration{
-  width:100%; max-width:360px; height:auto;
-  filter:drop-shadow(0 20px 40px rgba(51,66,42,0.18));
+.hero-photo{
+  width:100%; max-width:420px; height:440px; object-fit:cover;
+  border-radius:160px 160px 12px 12px;
+  border:3px solid var(--gold);
+  box-shadow:0 30px 60px -20px rgba(51,66,42,0.35);
 }
 
 /* Geometric star pattern divider — signature element */
@@ -140,6 +143,22 @@ h2{ font-size:clamp(1.9rem, 3.2vw, 2.6rem); margin-bottom:1rem; }
 .about-grid{ display:grid; grid-template-columns:1.3fr 1fr; gap:4rem; align-items:start; }
 .about-text p{ margin-bottom:1rem; max-width:520px; color:var(--ink); }
 .urdu-line{ font-family:var(--font-display); font-style:italic; color:var(--olive-deep); font-size:1.15rem; margin-top:1.3rem; }
+
+.core-message{
+  border-left:3px solid var(--gold); padding-left:1.2rem; margin:1.5rem 0;
+  font-family:var(--font-display); font-size:1.2rem; font-style:italic; color:var(--olive-deep);
+  max-width:520px; line-height:1.5;
+}
+.founder-note{ margin-top:1.8rem; padding-top:1.6rem; border-top:1px solid var(--line); max-width:520px; }
+.founder-note p:not(.eyebrow):not(.urdu-line){ font-size:0.95rem; color:var(--ink); margin-bottom:0.8rem; }
+
+/* Values strip */
+.values-strip{ background:var(--olive-deep); padding:2.6rem 1.5rem; }
+.values-row{ display:flex; justify-content:space-between; flex-wrap:wrap; gap:1.5rem; text-align:center; }
+.values-row li{ flex:1; min-width:120px; }
+.value-ar{ display:block; font-family:var(--font-display); font-style:italic; font-size:1.15rem; color:var(--gold-bright); margin-bottom:0.2rem; }
+.value-en{ display:block; font-size:0.78rem; letter-spacing:0.04em; color:rgba(250,248,243,0.75); }
+.tm{ font-size:0.5em; vertical-align:super; color:var(--gold); }
 
 .who-list{ display:grid; grid-template-columns:1fr 1fr; gap:0.7rem; align-content:start; }
 .who-list li{
@@ -216,7 +235,13 @@ h2{ font-size:clamp(1.9rem, 3.2vw, 2.6rem); margin-bottom:1rem; }
 .contact p{ color:rgba(247,242,230,0.8); margin-bottom:1.6rem; max-width:420px; }
 .contact-grid{ display:grid; grid-template-columns:1.1fr 0.9fr; gap:3rem; align-items:center; }
 .contact-list{ display:flex; flex-direction:column; gap:1.2rem; }
-.contact-list li{ display:flex; flex-direction:column; gap:0.2rem; border-bottom:1px solid rgba(247,242,230,0.15); padding-bottom:1rem; }
+.contact-list li{ display:flex; align-items:center; gap:1rem; border-bottom:1px solid rgba(247,242,230,0.15); padding-bottom:1rem; }
+.contact-icon{
+  flex-shrink:0; width:42px; height:42px; border-radius:50%;
+  background:rgba(224,189,125,0.12); border:1px solid rgba(224,189,125,0.35);
+  color:var(--gold-bright); display:flex; align-items:center; justify-content:center;
+}
+.contact-text{ display:flex; flex-direction:column; gap:0.15rem; }
 .contact-label{ font-size:0.72rem; text-transform:uppercase; letter-spacing:0.14em; color:var(--gold-bright); }
 .contact-list a{ font-size:1.05rem; }
 .contact-list a:hover{ color:var(--gold-bright); }
@@ -255,6 +280,8 @@ h2{ font-size:clamp(1.9rem, 3.2vw, 2.6rem); margin-bottom:1rem; }
   .who-list{ grid-template-columns:1fr 1fr; }
 
   .why-grid, .course-grid{ grid-template-columns:1fr 1fr; }
+  .values-row{ justify-content:center; }
+  .values-row li{ min-width:45%; }
   .contact-grid{ grid-template-columns:1fr; text-align:center; }
   .contact p{ margin-left:auto; margin-right:auto; }
 }
