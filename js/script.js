@@ -9,13 +9,11 @@ function closeNav(){
   mainNav.classList.remove('is-open');
   navBackdrop.classList.remove('is-open');
   navToggle.setAttribute('aria-expanded', 'false');
-  document.body.style.overflow = '';
 }
 function openNav(){
   mainNav.classList.add('is-open');
   navBackdrop.classList.add('is-open');
   navToggle.setAttribute('aria-expanded', 'true');
-  document.body.style.overflow = 'hidden';
 }
 
 navToggle.addEventListener('click', () => {
