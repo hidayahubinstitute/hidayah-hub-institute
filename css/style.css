@@ -321,7 +321,6 @@ h3{ font-size:1.35rem; }
 @media (max-width:560px){
   .why-grid, .course-grid{ grid-template-columns:1fr; }
   .who-list{ grid-template-columns:1fr; }
-  .arch-frame{ width:220px; height:280px; }
   .method-steps li{ gap:1rem; }
 }
 
