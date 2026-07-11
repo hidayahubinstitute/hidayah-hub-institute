@@ -22,6 +22,16 @@
 
 *{ box-sizing:border-box; margin:0; padding:0; }
 html{ scroll-behavior:smooth; }
+section[id], main{ scroll-margin-top:84px; }
+a:focus-visible, button:focus-visible{
+  outline:2px solid var(--gold); outline-offset:3px;
+}
+.skip-link{
+  position:absolute; left:-999px; top:0; z-index:999;
+  background:var(--olive-deep); color:var(--cream); padding:0.8rem 1.2rem;
+  font-family:var(--font-body); font-size:0.9rem; border-radius:0 0 4px 0;
+}
+.skip-link:focus{ left:0; }
 body{
   font-family:var(--font-body);
   color:var(--dark);
@@ -207,7 +217,9 @@ h3{ font-size:1.35rem; }
 .course-card{
   padding:2.2rem 1.8rem; background:var(--olive-deep); color:var(--cream);
   border-radius:2px; position:relative; overflow:hidden;
+  transition:transform .25s ease, box-shadow .25s ease;
 }
+.course-card:hover{ transform:translateY(-4px); box-shadow:0 16px 30px -12px rgba(51,66,42,0.4); }
 .course-card h3{ color:var(--cream); font-size:1.35rem; margin-bottom:0.8rem; }
 .course-card h3 span{ display:block; font-size:0.7rem; text-transform:uppercase; letter-spacing:0.1em; color:var(--gold-bright); font-family:var(--font-body); margin-top:0.3rem; }
 .course-card p{ font-size:0.9rem; color:rgba(247,242,230,0.8); margin-bottom:1.4rem; }
