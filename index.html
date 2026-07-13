@@ -8,7 +8,7 @@
   <meta name="theme-color" content="#556B2F">
   <link rel="canonical" href="https://hidayahubinstitute.github.io/hidayah-hub-institute/">
   
-  <!-- Open Graph / Social Security Elements -->
+  <!-- Open Graph / Social Media Previews -->
   <meta property="og:type" content="website">
   <meta property="og:title" content="Hidayah Hub Institute — Live Qur'an & Tajweed Classes">
   <meta property="og:description" content="Live, one-to-one and group Qur'an Reading and Tajweed classes online, taught personally in English, Hindi, Urdu and Arabic.">
@@ -16,7 +16,7 @@
   <meta property="og:url" content="https://hidayahubinstitute.github.io/hidayah-hub-institute/">
   <meta name="twitter:card" content="summary_large_image">
   
-  <!-- Schema.org Structured Microdata -->
+  <!-- Schema.org Structured Microdata (For Google Search) -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -29,7 +29,7 @@
   }
   </script>
   
-  <!-- Optimization Infrastructure -->
+  <!-- Font Optimization & Stylesheets -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,500&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
@@ -37,19 +37,21 @@
   <link rel="icon" type="image/png" href="images/logo.png">
 </head>
 <body>
+  <!-- Accessibility: Skip to Content -->
   <a href="#main-content" class="skip-link">Skip to content</a>
   <div class="noise-overlay"></div>
 
   <!-- ================= NAV ================= -->
   <header class="site-header" id="header">
     <div class="header-inner">
-      <a href="#home" class="brand">
+      <a href="#home" class="brand" aria-label="Hidayah Hub Institute Home">
         <span class="brand-mark" aria-hidden="true">
           <img src="images/logo.png" alt="" class="brand-mark-img" width="195" height="113">
         </span>
         <span class="brand-text">Hidayah Hub <em>Institute</em></span>
       </a>
-      <nav class="main-nav" id="mainNav">
+      
+      <nav class="main-nav" id="mainNav" aria-label="Main Navigation">
         <a href="#home">Home</a>
         <a href="#about">About</a>
         <a href="#courses">Courses</a>
@@ -57,17 +59,20 @@
         <a href="#method">Method</a>
         <a href="#faq">FAQ</a>
         <a href="#contact">Contact</a>
-        <a href="https://forms.gle/hPq24x8xukwSdsPk7" target="_blank" rel="noopener" class="btn btn-gold btn-small">Apply Now</a>
+        <a href="https://forms.gle/hPq24x8xukwSdsPk7" target="_blank" rel="noopener noreferrer" class="btn btn-gold btn-small">Apply Now</a>
       </nav>
-      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+      
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="mainNav">
         <span></span><span></span><span></span>
       </button>
     </div>
-    <div class="nav-backdrop" id="navBackdrop"></div>
+    <div class="nav-backdrop" id="navBackdrop" aria-hidden="true"></div>
   </header>
 
-  <main id="main-content">
-    <!-- ================= HERO ================= -->
+  <!-- ================= MAIN CONTENT ================= -->
+  <main id="main-content" class="page-wrapper">
+    
+    <!-- HERO SECTION -->
     <section class="hero" id="home">
       <div class="hero-inner">
         <div class="hero-copy">
@@ -75,7 +80,7 @@
           <h1>Guiding Hearts Through<br><span>Authentic Islamic Knowledge</span></h1>
           <p class="hero-sub">Learn the Qur'an through live, one-to-one or small group classes. Structured lessons for children, adults, and reverts — all from the comfort of your home.</p>
           <div class="hero-actions">
-            <a href="https://forms.gle/hPq24x8xukwSdsPk7" target="_blank" rel="noopener" class="btn btn-gold">Start Learning</a>
+            <a href="https://forms.gle/hPq24x8xukwSdsPk7" target="_blank" rel="noopener noreferrer" class="btn btn-gold">Start Learning</a>
             <a href="#contact" class="btn btn-outline">Talk to Us</a>
           </div>
           <ul class="feature-row">
@@ -98,14 +103,14 @@
           </ul>
           <p class="hero-note">We give our 100% and expect the same from you.</p>
         </div>
-        <div class="hero-visual" aria-hidden="true">
+        <div class="hero-visual">
           <img src="images/hero-quran.jpg" alt="Qur'an resting on a wooden stand, with the verse: And We have certainly made the Qur'an easy for remembrance — Al-Qamar 54:17" class="hero-photo" width="965" height="890">
         </div>
       </div>
-      <div class="pattern-divider"></div>
+      <div class="pattern-divider" aria-hidden="true"></div>
     </section>
 
-    <!-- ================= ABOUT ================= -->
+    <!-- ABOUT SECTION -->
     <section class="section about" id="about">
       <div class="section-inner about-grid">
         <div class="about-text">
@@ -120,7 +125,7 @@
             <p class="founder-line">We don't just teach. We make sure you learn.</p>
           </div>
         </div>
-        <ul class="who-list">
+        <ul class="who-list" aria-label="Who our courses are for">
           <li><span>Children</span></li>
           <li><span>Teenagers</span></li>
           <li><span>University Students</span></li>
@@ -128,13 +133,13 @@
           <li><span>Parents</span></li>
           <li><span>New Muslims / Reverts</span></li>
           <li><span>Men &amp; Women</span></li>
-          <li><span>Adults returning to their studies</span></li>
+          <li><span>Adults returning to studies</span></li>
         </ul>
       </div>
     </section>
 
-    <!-- ================= VALUES ================= -->
-    <section class="values-strip">
+    <!-- VALUES SECTION -->
+    <section class="values-strip" aria-label="Core Values">
       <div class="section-inner">
         <ul class="values-row">
           <li><span class="value-ar">Ikhlāṣ</span><span class="value-en">Sincerity</span></li>
@@ -147,47 +152,47 @@
       </div>
     </section>
 
-    <!-- ================= WHY CHOOSE US ================= -->
+    <!-- WHY CHOOSE US -->
     <section class="section why" id="why">
       <div class="section-inner">
         <p class="eyebrow center">Why Students Stay</p>
         <h2 class="center">What learning here actually looks like</h2>
         <div class="why-grid">
-          <div class="why-card">
-            <span class="why-icon">◆</span>
+          <article class="why-card">
+            <span class="why-icon" aria-hidden="true">◆</span>
             <h3>Live, not recorded</h3>
             <p>Every class happens in real time, with room for questions and correction as you read.</p>
-          </div>
-          <div class="why-card">
-            <span class="why-icon">◆</span>
+          </article>
+          <article class="why-card">
+            <span class="why-icon" aria-hidden="true">◆</span>
             <h3>One-to-one or group</h3>
             <p>Learn individually at your own pace, or alongside peers in a small group setting.</p>
-          </div>
-          <div class="why-card">
-            <span class="why-icon">◆</span>
+          </article>
+          <article class="why-card">
+            <span class="why-icon" aria-hidden="true">◆</span>
             <h3>Taught in your language</h3>
             <p>Instruction available in English, Hindi, Urdu, and basic Arabic — whichever you're most comfortable in.</p>
-          </div>
-          <div class="why-card">
-            <span class="why-icon">◆</span>
+          </article>
+          <article class="why-card">
+            <span class="why-icon" aria-hidden="true">◆</span>
             <h3>Revision, always</h3>
             <p>Every class begins by reviewing the last one, so progress compounds instead of resetting.</p>
-          </div>
-          <div class="why-card">
-            <span class="why-icon">◆</span>
+          </article>
+          <article class="why-card">
+            <span class="why-icon" aria-hidden="true">◆</span>
             <h3>Notes &amp; homework</h3>
             <p>PDFs, written notes and homework are shared after class, with recordings when needed.</p>
-          </div>
-          <div class="why-card">
-            <span class="why-icon">◆</span>
+          </article>
+          <article class="why-card">
+            <span class="why-icon" aria-hidden="true">◆</span>
             <h3>If you miss a class</h3>
             <p>Absences are noticed and followed up personally — you're never quietly dropped.</p>
-          </div>
+          </article>
         </div>
       </div>
     </section>
 
-    <!-- ================= COURSES ================= -->
+    <!-- COURSES -->
     <section class="section courses" id="courses">
       <div class="section-inner">
         <p class="eyebrow center">Courses</p>
@@ -215,7 +220,7 @@
       </div>
     </section>
 
-    <!-- ================= TEACHING METHOD ================= -->
+    <!-- TEACHING METHOD -->
     <section class="section method" id="method">
       <div class="section-inner">
         <p class="eyebrow center">Our Framework</p>
@@ -231,44 +236,44 @@
       </div>
     </section>
 
-    <!-- ================= FAQ ================= -->
+    <!-- FAQ -->
     <section class="section faq" id="faq">
       <div class="section-inner narrow">
         <p class="eyebrow center">Questions</p>
         <h2 class="center">Before you apply</h2>
         <div class="faq-list">
           <div class="faq-item">
-            <button class="faq-q" aria-expanded="false" aria-controls="faq-a-1" id="faq-q-1">Are classes live, or pre-recorded?<span class="faq-plus">+</span></button>
+            <button class="faq-q" aria-expanded="false" aria-controls="faq-a-1" id="faq-q-1">Are classes live, or pre-recorded?<span class="faq-plus" aria-hidden="true">+</span></button>
             <div class="faq-a" id="faq-a-1" role="region" aria-labelledby="faq-q-1"><p>All classes are live and interactive. Recordings are shared afterward only if you need to revisit something.</p></div>
           </div>
           <div class="faq-item">
-            <button class="faq-q" aria-expanded="false" aria-controls="faq-a-2" id="faq-q-2">What languages are classes taught in?<span class="faq-plus">+</span></button>
+            <button class="faq-q" aria-expanded="false" aria-controls="faq-a-2" id="faq-q-2">What languages are classes taught in?<span class="faq-plus" aria-hidden="true">+</span></button>
             <div class="faq-a" id="faq-a-2" role="region" aria-labelledby="faq-q-2"><p>English, Hindi, Urdu, and basic Arabic — pick whichever helps you understand best.</p></div>
           </div>
           <div class="faq-item">
-            <button class="faq-q" aria-expanded="false" aria-controls="faq-a-3" id="faq-q-3">Can I choose one-to-one classes instead of a group?<span class="faq-plus">+</span></button>
+            <button class="faq-q" aria-expanded="false" aria-controls="faq-a-3" id="faq-q-3">Can I choose one-to-one classes instead of a group?<span class="faq-plus" aria-hidden="true">+</span></button>
             <div class="faq-a" id="faq-a-3" role="region" aria-labelledby="faq-q-3"><p>Yes. Mention your preference in the application form, and we'll arrange it accordingly.</p></div>
           </div>
           <div class="faq-item">
-            <button class="faq-q" aria-expanded="false" aria-controls="faq-a-4" id="faq-q-4">Is there a fee, and is it affordable?<span class="faq-plus">+</span></button>
+            <button class="faq-q" aria-expanded="false" aria-controls="faq-a-4" id="faq-q-4">Is there a fee, and is it affordable?<span class="faq-plus" aria-hidden="true">+</span></button>
             <div class="faq-a" id="faq-a-4" role="region" aria-labelledby="faq-q-4"><p>Yes, there's a fixed course fee, kept affordable. Exact pricing is shared once we know your course and format.</p></div>
           </div>
           <div class="faq-item">
-            <button class="faq-q" aria-expanded="false" aria-controls="faq-a-5" id="faq-q-5">How do I apply?<span class="faq-plus">+</span></button>
+            <button class="faq-q" aria-expanded="false" aria-controls="faq-a-5" id="faq-q-5">How do I apply?<span class="faq-plus" aria-hidden="true">+</span></button>
             <div class="faq-a" id="faq-a-5" role="region" aria-labelledby="faq-q-5"><p>Fill out the short application form — it takes under two minutes — and we'll reach out on WhatsApp.</p></div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ================= CONTACT ================= -->
+    <!-- CONTACT -->
     <section class="section contact" id="contact">
       <div class="section-inner contact-grid">
         <div>
           <p class="eyebrow">Get in Touch</p>
           <h2>Ready to start learning?</h2>
           <p>Fill out the application form and we'll follow up on WhatsApp to confirm your timing and course.</p>
-          <a href="https://forms.gle/hPq24x8xukwSdsPk7" target="_blank" rel="noopener" class="btn btn-gold">Apply Now</a>
+          <a href="https://forms.gle/hPq24x8xukwSdsPk7" target="_blank" rel="noopener noreferrer" class="btn btn-gold">Apply Now</a>
         </div>
         <ul class="contact-list">
           <li>
@@ -277,7 +282,7 @@
             </span>
             <span class="contact-text">
               <span class="contact-label">WhatsApp</span>
-              <a href="https://wa.me/918112886417" target="_blank" rel="noopener">+91 81128 86417</a>
+              <a href="https://wa.me/918112886417" target="_blank" rel="noopener noreferrer">+91 81128 86417</a>
             </span>
           </li>
           <li>
@@ -298,7 +303,7 @@
             </span>
             <span class="contact-text">
               <span class="contact-label">Instagram</span>
-              <a href="https://instagram.com/learnquranbysheikh" target="_blank" rel="noopener">@learnquranbysheikh</a>
+              <a href="https://instagram.com/learnquranbysheikh" target="_blank" rel="noopener noreferrer">@learnquranbysheikh</a>
             </span>
           </li>
         </ul>
